@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<! metadata >
+		
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Page Title</title>
+		<link rel="shortcut icon" href="Logo1.ico">
+		
+		<!  >
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<script>
+		
+			function GenerateTable()
+			{
+				var rowCount = parseInt(document.getElementById("rows").value);
+				var colCount = parseInt(document.getElementById("cols").value);
+				
+				var output = "<table cellspacing='0' border='1'>";
+				
+				for(r = 0; r < rowCount; r++)
+					{	
+						output = output + "<tr height='10'>";
+						
+						for(c = 0; c < colCount; c++)
+							{
+								output = output + "<td width='10'></td>";
+							}
+						
+						output = output + "</tr>";
+						
+					}
+				
+				output = output + "</table>";
+				
+				document.getElementById("table").innerHTML = output;
+			}
+			
+			function Reset()
+			{
+				document.getElementById("rows").value = 1;
+				document.getElementById("cols").value = 1;
+				
+				document.getElementById("table").innerHTML = "";
+			}	
+		
+		</script>
+		
+		
+		
+	</head>
+	<body>
+
+		<header>
+			<span width="20%">
+				<a href="index.html"><img src="Logo1.png" width="100"></a>
+			</span>
+		
+			<hr/>
+		</header>
+		
+		<main>
+		
+			<div class="left">
+			</div>
+			
+			<div class="middle">
+				<h1>Welcome Title</h1>
+				<br/>
+				
+				<hr/>
+							
+				<h2>Table Generator</h2>
+				
+				
+				<form id="frm1" action="">
+					
+					<table>
+						<tr>
+							<td>Enter Rows</td>
+							<td><input type="text" id="rows" value="1"></td>
+						</tr>
+						
+						<tr>
+							<td>Enter Columns</td>
+							<td><input type="text" id="cols" value="1"></td>
+						</tr>
+						
+					</table>
+					
+					<button type="button" id="btnGen" onclick="GenerateTable()">Generate</button>
+					<button type="button" id="btnReset" onclick="Reset()">Reset</button>
+					
+					<p id="table"></p>
+					
+					<br/>
+					
+				
+				</form>
+				
+			</div>
+			
+			<div class="right">
+			</div>
+			
+			<hr/>
+		</main>
+		
+		<div class="blank">
+		
+		</div>
+		
+		<footer>
+			
+			<div class="left">
+			
+			</div>
+			
+			<div class="middle">
+			
+				<h2>Footer Heading</h2>
+				
+			</div>
+			
+			<div class="right">
+			
+			</div>
+			
+			
+		</footer>
+		
+	</body>
+
+</html>
