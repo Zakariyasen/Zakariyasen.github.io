@@ -12,48 +12,11 @@
 		<!  >
 		
 		<link rel="stylesheet" type="text/css" href="style.css">
-		
-		<script>
-		
-			function GenerateTable()
-			{
-				var rowCount = parseInt(document.getElementById("rows").value);
-				var colCount = parseInt(document.getElementById("cols").value);
-				
-				var output = "<table cellspacing='0' border='1'>";
-				
-				for(r = 0; r < rowCount; r++)
-					{	
-						output = output + "<tr height='10'>";
-						
-						for(c = 0; c < colCount; c++)
-							{
-								output = output + "<td width='10'></td>";
-							}
-						
-						output = output + "</tr>";
-						
-					}
-				
-				output = output + "</table>";
-				
-				document.getElementById("table").innerHTML = output;
-			}
-			
-			function Reset()
-			{
-				document.getElementById("rows").value = 1;
-				document.getElementById("cols").value = 1;
-				
-				document.getElementById("table").innerHTML = "";
-			}	
-		
-		</script>
-		
-		
+		<script type="text/javascript" src="tablegen.js"></script>
+		<script type="text/javascript" src="footergen.js"></script>
 		
 	</head>
-	<body>
+	<body onload = "ContactDetails()">
 
 		<header>
 			<span width="20%">
@@ -65,7 +28,12 @@
 		
 		<main>
 		
-			<div class="left">
+			<div class="show">
+				<u><h3>Basic Table Generator:</h3></u>
+				
+				<p>This is a basic table generator, that accepts an input for the rows and columns from the user that they want to generate after they press the "Generate" button. Pressing the "Reset" button will clear the table and reset the textboxes to the default value of one.</p>
+				<p>This uses a paragraph tag with no content and document.GetElementById to draw the table on the page.</p>	
+				
 			</div>
 			
 			<div class="middle">
@@ -97,6 +65,7 @@
 					
 					<p id="table"></p>
 					
+										
 					<br/>
 					
 				
@@ -104,9 +73,8 @@
 				
 			</div>
 			
-			<div class="right">
-				<u><h3>Basic Table Generator:</h3></u>
-				<p>This is a basic table generator, that accepts an input for the rows and columns from the user that they want to generate after they press the "Generate" button. Pressing the "Reset" button will clear the table and reset the textboxes to the default value of one.</p>
+			<div class="hide">
+			
 			</div>
 			
 			<hr/>
@@ -118,17 +86,18 @@
 		
 		<footer>
 			
-			<div class="left">
+			<div class="hide">
 			
 			</div>
 			
 			<div class="middle">
 			
 				<h2>Footer Heading</h2>
+				<p id ="det"></p>
 				
 			</div>
 			
-			<div class="left">
+			<div class="hide">
 			
 			</div>
 			
@@ -136,5 +105,6 @@
 		</footer>
 		
 	</body>
+	
 
 </html>
