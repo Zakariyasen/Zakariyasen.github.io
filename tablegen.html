@@ -37,12 +37,12 @@
 			</div>
 			
 			<div class="middle">
-				<h1>Welcome</h1>
+				<h1>Table Generator</h1>
 				<br/>
 				
 				<hr/>
 							
-				<h2>Table Generator</h2>
+				<h2></h2>
 				
 				
 				<form id="frm1" action="">
@@ -50,18 +50,34 @@
 					<table>
 						<tr>
 							<td>Enter Rows</td>
+							<td></td>
 							<td><input type="text" id="rows" value="1"></td>
 						</tr>
 						
 						<tr>
 							<td>Enter Columns</td>
+							<td></td>
 							<td><input type="text" id="cols" value="1"></td>
 						</tr>
 						
+						<tr>
+							<td></td>
+						</tr>
+						
+						<tr>
+							<td></td>
+							<td  rowspan="2">
+								<button type="button" id="btnGen" onclick="GenerateTable()">Generate</button>
+								<button type="button" id="btnReset" onclick="Reset()">Reset</button>
+							</td>
+							<td></td>
+						</tr>
+						
+						
 					</table>
 					
-					<button type="button" id="btnGen" onclick="GenerateTable()">Generate</button>
-					<button type="button" id="btnReset" onclick="Reset()">Reset</button>
+					
+					
 					
 					<p id="table"></p>
 					
@@ -86,23 +102,29 @@
 		
 		<footer>
 			
-			<div class="hide">
-			
+			<div class="hide">			
 			</div>
 			
-			<div class="middle">
 			
-				<h2>Footer Heading</h2>
-				<p id ="det"></p>
+			<div class="middle">
+				<h3>Contact me:</h3>
+				
+				<table class="contact">
+					<tr class="contact">
+						<th class="contact">Contact:</th>
+						<td class="contact">+27 63 177 0367</td>
+					</tr>
+					<tr class="contact">
+						<th class="contact">Email:</th>
+						<td class="contact">Zakariya.jappie1509@gmail.com</td>
+					</tr>
+				</table>
 				
 			</div>
 			
 			<div class="hide">
-			
 			</div>
 			
-			
-		</footer>
 		
 	</body>
 	

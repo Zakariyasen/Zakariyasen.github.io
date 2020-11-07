@@ -114,7 +114,37 @@ footer
 
 
 /* Contact */
+table.content
+
+	{
+		border-collapse: collapse;
+		text-align: left;
+		
+		font-size: 12px;
+		
+		width: 50%;
+		
+		
+	}
+
+tr.content:hover
+	{
+		background-color: #DCDCDC;
+		height: 30px;
+		
+	}
+
+td.content, th.content:hover
+	{
+		width: 50%;
+		font-style: italic;
+	}
+	
+	
+
+/* Contact */
 table.contact
+
 	{
 		border-collapse: collapse;
 		text-align: left;
@@ -140,31 +170,29 @@ td.contact, th.contact:hover
 	}
 
 
-/* Content */
+/* Generator */
 
-/*
-table.content
+
+table.gen
 	{
+		border: 1px solid black;
 		border-collapse: collapse;
-		text-align: left;
+	}
+
+tr.gen
+	{
 		
-		font-size: 12px;
+		border: 1px solid black;
+		height: 10px;
 		
-		width: 50%;
 		
 		
 	}
 
-tr.content:hover
+td.gen, th.gen
 	{
-		background-color: #DCDCDC;
-		height: 30px;
+		border: 1px solid black;
+		width: 10px;
 		
 	}
 
-td.content, th.content:hover
-	{
-		width: 50%;
-		font-style: italic;
-	}
-*/
