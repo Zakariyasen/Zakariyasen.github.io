@@ -113,31 +113,65 @@ footer
 /* Table Styles */	
 
 
-/* Contact */
+/* content */
 table.content
 
 	{
 		border-collapse: collapse;
 		text-align: left;
 		
-		font-size: 12px;
+		font-size: 16px;
 		
-		width: 50%;
+		width: 95%;
+		
+		
+	}
+	
+
+tr.content
+	{
+		hight: 25px;	
+	}
+
+td.content
+	{
+		width: 25%;
+	}
+
+th.content
+	{
+		width: 25%;
+	}
+	
+
+	
+table.content:hover
+
+	{
 		
 		
 	}
 
 tr.content:hover
 	{
-		background-color: #DCDCDC;
-		height: 30px;
+		
+		
 		
 	}
 
-td.content, th.content:hover
+td.content:hover
 	{
 		width: 50%;
 		font-style: italic;
+		font-size: 18px;
+		
+		height: 30px;
+		background-color: #DCDCDC;
+	}
+
+th.content:hover
+	{
+
 	}
 	
 	
@@ -167,6 +201,7 @@ td.contact, th.contact:hover
 	{
 		width: 50%;
 		font-style: italic;
+		font-size: 14px;
 	}
 
 
@@ -195,4 +230,36 @@ td.gen, th.gen
 		width: 10px;
 		
 	}
+
+
+/* Calculator */
+
+table.calc
+
+	{
+		border-collapse: collapse;
+		border: Solid;
+		text-align: left;
+		
+		font-size: 16px;
+		
+		width: 95%;
+		
+		
+	}
+
+tr.calc
+	{
+		hight: 25px;
+	}
+
+td.calc, th.calc
+	{
+		width: 25%;
+		border:none;
+		
+		
+	}
+
+
 
