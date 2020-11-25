@@ -1,4 +1,3 @@
-//Table Generator
 
 function GenerateTable()
 {
@@ -33,9 +32,3 @@ function ResetTable()
 	document.getElementById("table").innerHTML = "";
 }	
 
-//Rate Calculator
-
-funtion CalculateQuote()
-{
-	
-}
